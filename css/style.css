@@ -1,0 +1,51 @@
+*,
+*::after,
+*::before {
+  margin: 0;
+  padding: 0;
+  box-sizing: inherit; }
+
+html {
+  box-sizing: border-box;
+  font-size: 62.5%; }
+
+body {
+  font-family: "Nunito", sans-serif;
+  font-family: 400; }
+
+.header {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  padding: 1rem 0; }
+
+.logo {
+  display: flex;
+  align-items: center; }
+  .logo__img {
+    max-width: 5rem;
+    margin-right: 1rem;
+    transform: translateY(-0.5rem); }
+  .logo__brand {
+    font-size: 3.6rem;
+    font-weight: 700; }
+
+.contacts {
+  display: flex;
+  align-items: center;
+  justify-content: space-between; }
+  .contacts__phone {
+    font-size: 1.6rem;
+    margin-right: 3.2rem;
+    flex: 0 0 50%; }
+  .contacts__phone--number {
+    color: #fb5c71; }
+  .contacts__social {
+    display: flex;
+    flex: 0 0 50%;
+    justify-content: space-between;
+    list-style: none; }
+  .contacts__social--btn a {
+    font-size: 3.2rem;
+    color: #000;
+    text-decoration: none; }
