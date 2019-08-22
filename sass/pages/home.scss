@@ -71,6 +71,50 @@
             left: 7%;
             bottom: 5%;
         }
+    }
+}
 
+.welcome {
+    display: flex;
+    padding: 12%;
+
+    &__info {
+        flex: 0 0 50%;
+    }
+
+    &__text {
+
+    }
+
+    &__features {
+        &--1 {
+
+        }
+
+        &--2 {
+
+        }
+    }
+
+    &__infographics {
+        flex: 0 0 50%;
+    }
+
+    &__badges {
+        &--1 {
+
+        }
+
+        &--2 {
+
+        }
+
+        &--3 {
+
+        }
+
+        &--4 {
+
+        }
     }
 }

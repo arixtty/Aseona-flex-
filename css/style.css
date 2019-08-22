@@ -15,7 +15,7 @@ body {
   font-size: 1.8rem;
   color: #8b9094; }
 
-.heading-primary, .heading-secondary {
+.heading-primary, .heading-secondary, .heading-tertiary {
   font-weight: 700;
   color: #000; }
 
@@ -23,9 +23,9 @@ body {
   font-size: 8rem; }
 
 .heading-primary--underlined {
-  display: inline-block;
   position: relative;
-  z-index: 1; }
+  z-index: 1;
+  display: inline-block; }
   .heading-primary--underlined::after {
     content: "";
     height: .6rem;
@@ -38,6 +38,23 @@ body {
 
 .heading-secondary {
   font-size: 4.4rem; }
+
+.heading-secondary--underlined {
+  position: relative;
+  z-index: 1;
+  display: inline-block; }
+  .heading-secondary--underlined::after {
+    content: "";
+    height: .6rem;
+    position: absolute;
+    bottom: 1.5rem;
+    left: .5rem;
+    right: .5rem;
+    background: rgba(251, 128, 137, 0.5);
+    z-index: -1; }
+
+.heading-tertiary {
+  font-size: 2.2rem; }
 
 .link {
   font-size: 1.8rem;
@@ -145,3 +162,11 @@ body {
       position: absolute;
       left: 7%;
       bottom: 5%; }
+
+.welcome {
+  display: flex;
+  padding: 12%; }
+  .welcome__info {
+    flex: 0 0 50%; }
+  .welcome__infographics {
+    flex: 0 0 50%; }

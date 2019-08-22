@@ -1,0 +1,16 @@
+@mixin underlined($bottom) {
+ //   display: inline-block;
+    position: relative;
+    z-index: 1;
+
+    &::after {
+        content: "";
+        height: .6rem;
+        position: absolute;
+        bottom: $bottom;
+        left: .5rem;
+        right: .5rem;
+        background: rgba($color-pink-1, .5);
+        z-index: -1;
+    }
+}

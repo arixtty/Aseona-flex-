@@ -7,49 +7,45 @@ $color-grey-3: #f3f8f8;
 $color-pink-1: #fb8089;
 $color-pink-2: #fe66b6;
 
-
 body {
-    font-family: $font-primary;
-    font-family: 400;
-    font-size: 1.8rem;
-    color: $color-grey-1;
+  font-family: $font-primary;
+  font-family: 400;
+  font-size: 1.8rem;
+  color: $color-grey-1;
 }
 
 %heading {
-    font-weight: 700;
-    color: #000;
+  font-weight: 700;
+  color: #000;
 }
 
 .heading-primary {
-    @extend %heading;
-    font-size: 8rem;
+  @extend %heading;
+  font-size: 8rem;
 }
 
 .heading-primary--underlined {
-    display: inline-block;
-    position: relative;
-    z-index: 1;
-
-    &::after {
-        content: "";
-        height: .6rem;
-        position: absolute;
-        bottom: 2.5rem;
-        left: .5rem;
-        right: .5rem;
-        background: rgba($color-pink-1, .5);
-        z-index: -1;
-    }
+  @include underlined(2.5rem);
+  display: inline-block;
 }
 
 .heading-secondary {
-    @extend %heading;
-    font-size: 4.4rem;
+  @extend %heading;
+  font-size: 4.4rem;
+}
+
+.heading-secondary--underlined {
+  @include underlined(1.5rem);
+  display: inline-block;
+}
+
+.heading-tertiary {
+  @extend %heading;
+  font-size: 2.2rem;
 }
 
 .link {
-    font-size: 1.8rem;
-    font-weight: 700;
-    text-decoration: none;
+  font-size: 1.8rem;
+  font-weight: 700;
+  text-decoration: none;
 }
-
