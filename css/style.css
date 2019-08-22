@@ -11,13 +11,45 @@ html {
 
 body {
   font-family: "Nunito", sans-serif;
-  font-family: 400; }
+  font-family: 400;
+  font-size: 1.8rem;
+  color: #8b9094; }
+
+.heading-primary, .heading-secondary {
+  font-weight: 700;
+  color: #000; }
+
+.heading-primary {
+  font-size: 8rem; }
+
+.heading-primary--underlined {
+  display: inline-block;
+  position: relative;
+  z-index: 1; }
+  .heading-primary--underlined::after {
+    content: "";
+    height: .6rem;
+    position: absolute;
+    bottom: 2.5rem;
+    left: .5rem;
+    right: .5rem;
+    background: rgba(251, 128, 137, 0.5);
+    z-index: -1; }
+
+.heading-secondary {
+  font-size: 4.4rem; }
+
+.link {
+  font-size: 1.8rem;
+  font-weight: 700;
+  text-decoration: none; }
 
 .header {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 1rem 10%; }
+  padding: 1rem 12%;
+  color: #000; }
 
 .logo {
   display: flex;
@@ -52,8 +84,7 @@ body {
 .navigation {
   display: flex;
   justify-content: space-between;
-  padding: 2rem 10%;
-  font-size: 1.6rem;
+  padding: 2rem 12%;
   color: #fff;
   background: #38c3c7; }
   .navigation__list {
@@ -65,3 +96,52 @@ body {
     display: flex;
     justify-content: space-between;
     flex: 0 0 30%; }
+
+.intro {
+  position: relative; }
+  .intro__content {
+    display: flex;
+    justify-content: space-between;
+    padding: 12%;
+    background: #f3f8f8; }
+  .intro__info {
+    flex: 0 0 45%; }
+  .intro__info--text {
+    margin-top: 3rem; }
+  .intro__info--link {
+    display: block;
+    color: #000; }
+  .intro__image {
+    flex: 0 0 45%; }
+  .intro__img {
+    max-width: 100%; }
+  .intro__pattern {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%; }
+    .intro__pattern-1 {
+      position: absolute;
+      right: 6%;
+      top: 3%; }
+    .intro__pattern-2 {
+      position: absolute;
+      right: 45%;
+      bottom: 8%; }
+    .intro__pattern-3 {
+      position: absolute;
+      left: 9%;
+      top: 7%; }
+    .intro__pattern-4 {
+      position: absolute;
+      right: 8%;
+      bottom: 4%; }
+    .intro__pattern-5 {
+      position: absolute;
+      right: 55%;
+      bottom: 15%; }
+    .intro__pattern-6 {
+      position: absolute;
+      left: 7%;
+      bottom: 5%; }
