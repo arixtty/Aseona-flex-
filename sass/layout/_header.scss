@@ -1,8 +1,8 @@
 .header {
   display: flex;
-  justify-content: space-around;
+  justify-content: space-between;
   align-items: center;
-  padding: 1rem 0;
+  padding: 1rem 10%;
 }
 
 .logo {
@@ -22,15 +22,15 @@
 }
 
 .contacts {
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-
-
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex: 0 0 50%;
   &__phone {
     font-size: 1.6rem;
-    margin-right: 3.2rem;
-    flex: 0 0 50%;
+
+    //    margin-right: 3.2rem;
+    //    flex: 0 0 50%;
   }
 
   &__phone--number {
@@ -39,17 +39,17 @@
 
   &__social {
     display: flex;
-    flex: 0 0 50%;
     justify-content: space-between;
+    flex: 0 0 50%;
 
     list-style: none;
   }
 
   &__social--btn {
-      a {
-    font-size: 3.2rem;
-    color: #000;
-    text-decoration: none;
-      }
+    a {
+      font-size: 3.2rem;
+      color: #000;
+      text-decoration: none;
+    }
   }
 }

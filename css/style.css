@@ -15,9 +15,9 @@ body {
 
 .header {
   display: flex;
-  justify-content: space-around;
+  justify-content: space-between;
   align-items: center;
-  padding: 1rem 0; }
+  padding: 1rem 10%; }
 
 .logo {
   display: flex;
@@ -33,19 +33,35 @@ body {
 .contacts {
   display: flex;
   align-items: center;
-  justify-content: space-between; }
+  justify-content: space-between;
+  flex: 0 0 50%; }
   .contacts__phone {
-    font-size: 1.6rem;
-    margin-right: 3.2rem;
-    flex: 0 0 50%; }
+    font-size: 1.6rem; }
   .contacts__phone--number {
     color: #fb5c71; }
   .contacts__social {
     display: flex;
-    flex: 0 0 50%;
     justify-content: space-between;
+    flex: 0 0 50%;
     list-style: none; }
   .contacts__social--btn a {
     font-size: 3.2rem;
     color: #000;
     text-decoration: none; }
+
+.navigation {
+  display: flex;
+  justify-content: space-between;
+  padding: 2rem 10%;
+  font-size: 1.6rem;
+  color: #fff;
+  background: #38c3c7; }
+  .navigation__list {
+    display: flex;
+    justify-content: space-between;
+    flex: 0 0 50%;
+    list-style: none; }
+  .navigation__form {
+    display: flex;
+    justify-content: space-between;
+    flex: 0 0 30%; }

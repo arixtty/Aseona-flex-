@@ -12,25 +12,52 @@
 </head>
 
 <body>
-    <header class="header">
-        <div class="logo">
-            <img src="img/logo.png" alt="logo image" class="logo__img">
-            <div class="logo__brand">Aseona</div>
-        </div>
+    <div class="container">
 
-        <div class="contacts">
-            <div class="contacts__phone">Call Us: <span class="contacts__phone--number">(999) 999 99 9</span></div>
+        <header class="header">
+            <div class="logo">
+                <img src="img/logo.png" alt="logo image" class="logo__img">
+                <div class="logo__brand">Aseona</div>
+            </div>
 
-            <ul class="contacts__social">
+            <div class="contacts">
+                <div class="contacts__phone">Call Us: <span class="contacts__phone--number">(999) 999 99 9</span></div>
+
+                <ul class="contacts__social">
                     <li class="contacts__social--btn"><a href="#"><i class="fab fa-facebook"></i></a></li>
                     <li class="contacts__social--btn"><a href="#"><i class="fab fa-twitter"></i></a></li>
                     <li class="contacts__social--btn"><a href="#"><i class="fab fa-tumblr"></i></a></li>
                     <li class="contacts__social--btn"><a href="#"><i class="fab fa-pinterest"></i></a></li>
                     <li class="contacts__social--btn"><a href="#"><i class="fab fa-instagram"></i></a></li>
                 </ul>
+            </div>
+        </header>
 
-        </div>
-    </header>
+        <nav class="navigation">
+            <ul class="navigation__list">
+                <li class="navigation__link">Home</li>
+                <li class="navigation__link">Pages</li>
+                <li class="navigation__link">Services</li>
+                <li class="navigation__link">Case Studies</li>
+                <li class="navigation__link">Blog</li>
+                <li class="navigation__link">Contact</li>
+            </ul>
+
+            <div class="navigation__form">
+                <form action="#" class="navigation__form--search">
+                    <input type="search">
+                </form>
+
+                <form action="#" class="navigation__form--list">
+                    <select name="language" id="language">
+                        <option value="en">en</option>
+                        <option value="ru">ru</option>
+                    </select>
+                </form>
+            </div>
+        </nav>
+
+    </div>
 </body>
 
 </html>

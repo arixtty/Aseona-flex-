@@ -1,0 +1,38 @@
+.navigation {
+    display: flex;
+   justify-content: space-between;
+
+    padding: 2rem 10%;
+    font-size: 1.6rem;
+    color: #fff;
+    background: #38c3c7;
+
+    &__list {
+        display: flex;
+        justify-content: space-between;
+        flex: 0 0 50%;
+
+        list-style: none;
+    }
+
+    &__link {
+
+    }
+
+    &__form {
+        display: flex;
+        justify-content: space-between;
+
+        flex: 0 0 30%;
+    }
+
+    &__form--search {
+
+    }
+
+    &__form--list {
+
+    }
+
+}
+
