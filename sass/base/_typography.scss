@@ -1,12 +1,3 @@
-$font-primary: "Nunito", sans-serif;
-
-$color-grey-1: #8b9094;
-$color-grey-2: #c4c4c4;
-$color-grey-3: #f3f8f8;
-
-$color-pink-1: #fb8089;
-$color-pink-2: #fe66b6;
-
 body {
   font-family: $font-primary;
   font-family: 400;
@@ -26,7 +17,6 @@ body {
 
 .heading-primary--underlined {
   @include underlined(2.5rem);
-  display: inline-block;
 }
 
 .heading-secondary {
@@ -36,7 +26,6 @@ body {
 
 .heading-secondary--underlined {
   @include underlined(1.5rem);
-  display: inline-block;
 }
 
 .heading-tertiary {

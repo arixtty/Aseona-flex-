@@ -1,0 +1,13 @@
+.btn {
+  &,
+  &:link,
+  &:visited {
+    text-decoration: none;
+    font-weight: 700;
+    padding: 1.1rem 6rem;
+    display: inline-block;
+    border-radius: 10rem;
+    color: #fff;
+    background: linear-gradient(120deg, $color-pink-1, $color-pink-2);
+  }
+}
