@@ -1,11 +1,13 @@
-.intro {
+    
+    .intro {
     position: relative;
 
     &__content {
     display: flex;
     justify-content: space-between;
-    padding: 12%;
     background: $color-grey-3;
+    padding: 12%;
+
     }
 
     &__info {
@@ -184,3 +186,68 @@
         }
     }
 }
+
+.case-study {
+
+    background-color: $color-grey-3;
+
+    &__text {
+        display: flex;
+        justify-content: space-between;
+        padding: 12% 12% 0 12%;
+
+    }
+
+    &__intro {
+        display: flex;
+        flex-flow: column;
+        align-items: flex-start;
+    }
+
+    &__paragpraph {
+        margin-top: 3rem;
+    }
+
+    &__btn {
+        display: flex;
+        flex-flow: column;
+        justify-content: center;
+    }
+        
+    &__link {
+        color: #fb5c71;
+
+    }
+
+    &__showcase {
+        display: flex;
+        justify-content: center;
+
+        padding: 0 0 12%;
+        margin-top: 5rem;
+    }
+
+    &__case {
+        flex: 0 0 30rem;
+
+        background-color: $color-grey-1;
+        height: 20rem;
+        margin: 0 2rem;
+        border-radius: 1rem;
+        box-shadow: 0 1rem 2rem rgba(0, 0, 0, 0.2);
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
