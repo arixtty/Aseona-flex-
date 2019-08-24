@@ -128,7 +128,7 @@ body {
   .intro__content {
     display: flex;
     justify-content: space-between;
-    background: #f3f8f8;
+    background-color: #f3f8f8;
     padding: 12%; }
   .intro__info {
     flex: 0 0 45%; }
@@ -283,3 +283,37 @@ body {
     margin: 0 2rem;
     border-radius: 1rem;
     box-shadow: 0 1rem 2rem rgba(0, 0, 0, 0.2); }
+
+.services {
+  padding: 12%;
+  text-align: center; }
+  .services__subheading {
+    max-width: 40%;
+    margin: 0 auto; }
+  .services__cards {
+    margin-top: 5rem;
+    display: flex;
+    flex-flow: wrap;
+    justify-content: space-between;
+    align-content: space-evenly; }
+  .services__card {
+    display: flex;
+    flex-flow: column;
+    align-items: start;
+    margin: 2.5rem;
+    padding: 2.5rem;
+    flex: 0 1 27vh;
+    height: 25vh;
+    border-radius: 1rem;
+    transition: all 0.2s; }
+    .services__card > * {
+      margin-bottom: 2.5rem; }
+    .services__card:hover {
+      box-shadow: 0 0.5rem 1rem rgba(196, 196, 196, 0.5); }
+  .services__badge {
+    padding: 2rem;
+    background-image: url(../../img/bg-splash.png);
+    background-size: contain;
+    background-repeat: no-repeat; }
+  .services__text {
+    text-align: initial; }
