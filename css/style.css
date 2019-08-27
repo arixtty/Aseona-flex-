@@ -70,6 +70,59 @@ body {
   color: #fff;
   background: linear-gradient(120deg, #fb8089, #fe66b6); }
 
+.card-1 {
+  display: flex;
+  flex-flow: column;
+  align-items: start;
+  margin: 2.5rem;
+  padding: 2.5rem;
+  flex: 0 1 27vh;
+  height: 25vh;
+  border-radius: 1rem;
+  transition: all 0.2s; }
+  .card-1 > * {
+    margin-bottom: 2.5rem; }
+  .card-1:hover {
+    box-shadow: 0 0.5rem 1rem rgba(196, 196, 196, 0.5); }
+  .card-1 .card-2 {
+    flex: 0 1 30vh;
+    min-height: 60rem;
+    position: relative;
+    perspective: 150rem; }
+    .card-1 .card-2__side {
+      height: 100%;
+      width: 100%;
+      position: absolute;
+      top: 0;
+      left: 0;
+      backface-visibility: hidden;
+      transition: all 0.4s;
+      border-radius: 1rem;
+      padding: 3rem;
+      display: flex;
+      flex-flow: column nowrap;
+      align-items: start;
+      justify-content: space-between;
+      background-image: url(../../img/bg-card-1.png);
+      background-size: 100% 45%;
+      background-position: top;
+      background-repeat: no-repeat;
+      box-shadow: 0 0.5rem 2rem rgba(0, 0, 0, 0.2); }
+      .card-1 .card-2__side--back {
+        transform: rotateY(-180deg); }
+      .card-1 .card-2__side .btn {
+        align-self: center;
+        width: 80%;
+        background: #38c3c7; }
+    .card-1 .card-2__side--pro {
+      background-image: url(../../img/bg-card-2.png); }
+      .card-1 .card-2__side--pro .btn {
+        background: linear-gradient(120deg, #fb8089, #fe66b6); }
+    .card-1 .card-2:hover .card-1 .card-2__side--front {
+      transform: rotateY(180deg); }
+    .card-1 .card-2:hover .card-1 .card-2__side--back {
+      transform: rotateY(0); }
+
 .header {
   display: flex;
   justify-content: space-between;
@@ -298,20 +351,6 @@ body {
     flex-flow: wrap;
     justify-content: space-between;
     align-content: space-evenly; }
-  .services__card {
-    display: flex;
-    flex-flow: column;
-    align-items: start;
-    margin: 2.5rem;
-    padding: 2.5rem;
-    flex: 0 1 27vh;
-    height: 25vh;
-    border-radius: 1rem;
-    transition: all 0.2s; }
-    .services__card > * {
-      margin-bottom: 2.5rem; }
-    .services__card:hover {
-      box-shadow: 0 0.5rem 1rem rgba(196, 196, 196, 0.5); }
   .services__badge {
     padding: 2rem;
     background-image: url(../../img/bg-splash.png);
@@ -352,45 +391,6 @@ body {
     margin-top: 10rem; }
     .pricing__services li {
       margin-bottom: 1rem; }
-
-.card-2 {
-  flex: 0 1 30vh;
-  min-height: 60rem;
-  position: relative;
-  perspective: 150rem; }
-  .card-2__side {
-    height: 100%;
-    width: 100%;
-    position: absolute;
-    top: 0;
-    left: 0;
-    backface-visibility: hidden;
-    transition: all 0.4s;
-    border-radius: 1rem;
-    padding: 3rem;
-    display: flex;
-    flex-flow: column nowrap;
-    align-items: start;
-    justify-content: space-between;
-    background-image: url(../../img/bg-card-1.png);
-    background-size: 100% 45%;
-    background-position: top;
-    background-repeat: no-repeat;
-    box-shadow: 0 0.5rem 2rem rgba(0, 0, 0, 0.2); }
-    .card-2__side--back {
-      transform: rotateY(-180deg); }
-    .card-2__side .btn {
-      align-self: center;
-      width: 80%;
-      background: #38c3c7; }
-  .card-2__side--pro {
-    background-image: url(../../img/bg-card-2.png); }
-    .card-2__side--pro .btn {
-      background: linear-gradient(120deg, #fb8089, #fe66b6); }
-  .card-2:hover .card-2__side--front {
-    transform: rotateY(180deg); }
-  .card-2:hover .card-2__side--back {
-    transform: rotateY(0); }
 
 /*
   &__checkbox {
