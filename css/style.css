@@ -128,7 +128,7 @@ body {
   .intro__content {
     display: flex;
     justify-content: space-between;
-    background-color: #f3f8f8;
+    background: #f3f8f8;
     padding: 12%; }
   .intro__info {
     flex: 0 0 45%; }
@@ -204,6 +204,8 @@ body {
     display: flex;
     flex-flow: column wrap;
     align-items: center;
+    align-content: space-evenly;
+    flex: 0 0 40%;
     height: 50rem;
     font-size: 1.8rem;
     font-weight: 700;
@@ -317,3 +319,93 @@ body {
     background-repeat: no-repeat; }
   .services__text {
     text-align: initial; }
+
+.pricing {
+  padding: 0 12% 12%;
+  text-align: center; }
+  .pricing__period {
+    display: flex;
+    justify-content: center;
+    margin: 5rem auto 5rem; }
+    .pricing__period .heading-tertiary:first-of-type {
+      margin-right: 3rem; }
+  .pricing__cards {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-content: space-around; }
+  .pricing__heading {
+    text-align: left; }
+    .pricing__heading .heading-tertiary {
+      color: #fff; }
+  .pricing__price {
+    color: #fff; }
+    .pricing__price--fare {
+      margin-top: 2rem; }
+      .pricing__price--fare span {
+        font-size: 4.4rem; }
+        .pricing__price--fare span sup {
+          font-style: italic; }
+  .pricing__services {
+    text-align: left;
+    list-style: none;
+    margin-top: 10rem; }
+    .pricing__services li {
+      margin-bottom: 1rem; }
+
+.card-2 {
+  flex: 0 1 30vh;
+  min-height: 60rem;
+  position: relative;
+  perspective: 150rem; }
+  .card-2__side {
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    backface-visibility: hidden;
+    transition: all 0.4s;
+    border-radius: 1rem;
+    padding: 3rem;
+    display: flex;
+    flex-flow: column nowrap;
+    align-items: start;
+    justify-content: space-between;
+    background-image: url(../../img/bg-card-1.png);
+    background-size: 100% 45%;
+    background-position: top;
+    background-repeat: no-repeat;
+    box-shadow: 0 0.5rem 2rem rgba(0, 0, 0, 0.2); }
+    .card-2__side--back {
+      transform: rotateY(-180deg); }
+    .card-2__side .btn {
+      align-self: center;
+      width: 80%;
+      background: #38c3c7; }
+  .card-2__side--pro {
+    background-image: url(../../img/bg-card-2.png); }
+    .card-2__side--pro .btn {
+      background: linear-gradient(120deg, #fb8089, #fe66b6); }
+  .card-2:hover .card-2__side--front {
+    transform: rotateY(180deg); }
+  .card-2:hover .card-2__side--back {
+    transform: rotateY(0); }
+
+/*
+  &__checkbox {
+
+    &--monthly,
+    &--yearly {
+      display: none; 
+    }
+
+    &--monthly:checked + label {
+      border-bottom: .5rem solid $color-pink-1;
+    }
+
+    &--yearly:checked + label {
+      border-bottom: .5rem solid $color-pink-1;
+    }
+  }
+  */
