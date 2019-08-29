@@ -451,13 +451,13 @@
 
   &__feed {
     display: flex;
-    justify-content: center;
+    justify-content: space-between;
     flex-flow: row wrap;
     margin-top: 5rem;
   }
 
   &__item {
-    margin-right: 2rem;
+  
     flex: 0 0 30rem;
     display: flex;
     flex-flow: column nowrap;
@@ -490,5 +490,56 @@
       letter-spacing: .1rem;
       color: $color-grey-2;
     }
+  }
+}
+
+.subscribe {
+  padding: 5rem 12%;
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: space-between;
+  align-items: center;
+  background-color: $color-grey-3;
+
+  &__heading {
+    font-size: 3.6rem;
+    color: #000;
+  }
+
+  &__text {
+    display: flex;
+    flex-flow: column nowrap;
+  }
+
+  &__cta {
+
+  }
+
+  &__form {
+    display: flex; 
+    align-items: center;
+    justify-content: flex-end;
+    flex: 1;
+
+    & > * {
+    outline: none;
+    border: none;
+    height: 4rem;
+    appearance: none;
+    padding: 0 2rem;
+    }
+    input {
+      border-radius: 10rem 0 0 10rem;
+      margin-right: 0;
+      width: 25rem;
+    }
+  }
+
+  &__btn {
+    border-radius: 0 10rem 10rem 0;
+    margin-left: 0;
+    background-color: $color-pink-4;
+    color: #fff;
+    width: 10rem;
   }
 }

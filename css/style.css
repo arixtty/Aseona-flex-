@@ -541,11 +541,10 @@ body {
   padding: 12%; }
   .news__feed {
     display: flex;
-    justify-content: center;
+    justify-content: space-between;
     flex-flow: row wrap;
     margin-top: 5rem; }
   .news__item {
-    margin-right: 2rem;
     flex: 0 0 30rem;
     display: flex;
     flex-flow: column nowrap;
@@ -570,3 +569,38 @@ body {
       text-transform: uppercase;
       letter-spacing: .1rem;
       color: #c4c4c4; }
+
+.subscribe {
+  padding: 5rem 12%;
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #f3f8f8; }
+  .subscribe__heading {
+    font-size: 3.6rem;
+    color: #000; }
+  .subscribe__text {
+    display: flex;
+    flex-flow: column nowrap; }
+  .subscribe__form {
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    flex: 1; }
+    .subscribe__form > * {
+      outline: none;
+      border: none;
+      height: 4rem;
+      appearance: none;
+      padding: 0 2rem; }
+    .subscribe__form input {
+      border-radius: 10rem 0 0 10rem;
+      margin-right: 0;
+      width: 25rem; }
+  .subscribe__btn {
+    border-radius: 0 10rem 10rem 0;
+    margin-left: 0;
+    background-color: #fb5c71;
+    color: #fff;
+    width: 10rem; }
