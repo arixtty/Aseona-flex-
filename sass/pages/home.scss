@@ -382,7 +382,7 @@
 .contact {
   padding: 12%;
   display: flex;
-  justify-content: center;
+  justify-content: space-around;
   flex-flow: row wrap;
 
   &__form-card {
@@ -403,7 +403,7 @@
         bottom: 0.6rem;
         left: 0.5rem;
         right: 0.5rem;
-        background: rgba($color-pink-1, 0.5);
+        background: rgba($color-pink-3, 0.5);
         z-index: -1;
       }
     }
@@ -442,6 +442,53 @@
       width: 100%;
       height: auto;
       display: block;
+    }
+  }
+}
+
+.news {
+  padding: 12%;
+
+  &__feed {
+    display: flex;
+    justify-content: center;
+    flex-flow: row wrap;
+    margin-top: 5rem;
+  }
+
+  &__item {
+    margin-right: 2rem;
+    flex: 0 0 30rem;
+    display: flex;
+    flex-flow: column nowrap;
+    align-items: flex-start;
+    justify-content: space-between;
+
+    & > * {
+      margin-bottom: 2rem;
+    }
+
+    &--image {
+      background-color: $color-grey-2;
+      height: 20rem;
+      width: 100%;
+      border-radius: 0.5rem;
+    }
+
+    &--tag {
+      padding: .5rem 2.5rem;
+      color: #fff;
+      background: linear-gradient(120deg, $color-pink-1, $color-pink-2);
+      font-size: 1.2rem;
+      text-transform: uppercase;
+      border-radius: .2rem;
+    }
+
+    &--date {
+      font-size: 1.4rem;
+      text-transform: uppercase;
+      letter-spacing: .1rem;
+      color: $color-grey-2;
     }
   }
 }

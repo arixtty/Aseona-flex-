@@ -33,7 +33,7 @@ body {
     bottom: 2.5rem;
     left: 0.5rem;
     right: 0.5rem;
-    background: rgba(251, 128, 137, 0.5);
+    background: rgba(255, 153, 204, 0.5);
     z-index: -1; }
 
 .heading-secondary {
@@ -50,7 +50,7 @@ body {
     bottom: 1.5rem;
     left: 0.5rem;
     right: 0.5rem;
-    background: rgba(251, 128, 137, 0.5);
+    background: rgba(255, 153, 204, 0.5);
     z-index: -1; }
 
 .heading-tertiary {
@@ -68,7 +68,7 @@ body {
   display: inline-block;
   border-radius: 10rem;
   color: #fff;
-  background: linear-gradient(120deg, #fb8089, #fe66b6); }
+  background: linear-gradient(120deg, #ff9966, #fe66b6); }
 
 .card-1 {
   display: flex;
@@ -122,7 +122,7 @@ body {
   .card-2__side--pro {
     background-image: url(../../img/bg-card-2.png); }
     .card-2__side--pro .btn {
-      background: linear-gradient(120deg, #fb8089, #fe66b6); }
+      background: linear-gradient(120deg, #ff9966, #fe66b6); }
   .card-2:hover .card-2__side--front {
     transform: rotateY(180deg); }
   .card-2:hover .card-2__side--back {
@@ -144,7 +144,7 @@ body {
     top: -3.5rem;
     font-size: 15rem;
     line-height: 1;
-    color: rgba(251, 128, 137, 0.2);
+    color: rgba(255, 153, 204, 0.2);
     z-index: 2; }
   .reviews__story--shape {
     float: left;
@@ -493,7 +493,7 @@ body {
 .contact {
   padding: 12%;
   display: flex;
-  justify-content: center;
+  justify-content: space-around;
   flex-flow: row wrap; }
   .contact__form-card {
     flex: 0 0 35vh;
@@ -511,7 +511,7 @@ body {
         bottom: 0.6rem;
         left: 0.5rem;
         right: 0.5rem;
-        background: rgba(251, 128, 137, 0.5);
+        background: rgba(255, 153, 204, 0.5);
         z-index: -1; }
   .contact__form > * {
     outline: none;
@@ -536,3 +536,37 @@ body {
       width: 100%;
       height: auto;
       display: block; }
+
+.news {
+  padding: 12%; }
+  .news__feed {
+    display: flex;
+    justify-content: center;
+    flex-flow: row wrap;
+    margin-top: 5rem; }
+  .news__item {
+    margin-right: 2rem;
+    flex: 0 0 30rem;
+    display: flex;
+    flex-flow: column nowrap;
+    align-items: flex-start;
+    justify-content: space-between; }
+    .news__item > * {
+      margin-bottom: 2rem; }
+    .news__item--image {
+      background-color: #c4c4c4;
+      height: 20rem;
+      width: 100%;
+      border-radius: 0.5rem; }
+    .news__item--tag {
+      padding: .5rem 2.5rem;
+      color: #fff;
+      background: linear-gradient(120deg, #ff9966, #fe66b6);
+      font-size: 1.2rem;
+      text-transform: uppercase;
+      border-radius: .2rem; }
+    .news__item--date {
+      font-size: 1.4rem;
+      text-transform: uppercase;
+      letter-spacing: .1rem;
+      color: #c4c4c4; }
