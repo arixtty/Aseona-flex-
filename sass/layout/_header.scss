@@ -9,6 +9,7 @@
 .logo {
   display: flex;
   align-items: center;
+  color: #000;
 
   &__img {
     max-width: 5rem;
@@ -22,35 +23,4 @@
   }
 }
 
-.contacts {
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  flex: 0 0 50%;
-  &__phone {
-    font-size: 1.6rem;
 
-    //    margin-right: 3.2rem;
-    //    flex: 0 0 50%;
-  }
-
-  &__phone--number {
-    color: #fb5c71;
-  }
-
-  &__social {
-    display: flex;
-    justify-content: space-between;
-    flex: 0 0 50%;
-
-    list-style: none;
-  }
-
-  &__social--btn {
-    a {
-      font-size: 3.2rem;
-      color: #000;
-      text-decoration: none;
-    }
-  }
-}
