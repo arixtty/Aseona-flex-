@@ -1,11 +1,11 @@
-@mixin underlined($bottom) {
+@mixin underlined($bottom, $height) {
   display: inline-block;
   position: relative;
   z-index: 1;
 
   &::after {
     content: "";
-    height: 0.6rem;
+    height: $height;
     position: absolute;
     bottom: $bottom;
     left: 0.5rem;

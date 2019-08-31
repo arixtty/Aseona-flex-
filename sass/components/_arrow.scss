@@ -1,0 +1,8 @@
+.slick-prev,
+.slick-next {
+    &:before {
+        font-size: 3rem;
+        line-height: 1;
+        color: $color-grey-1;
+    }
+}

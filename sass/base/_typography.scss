@@ -16,7 +16,7 @@ body {
 }
 
 .heading-primary--underlined {
-  @include underlined(2.5rem);
+  @include underlined(2.5rem, .6rem);
 }
 
 .heading-secondary {
@@ -25,12 +25,16 @@ body {
 }
 
 .heading-secondary--underlined {
-  @include underlined(1.5rem);
+  @include underlined(1.5rem, .4rem);
 }
 
 .heading-tertiary {
   @extend %heading;
   font-size: 2.2rem;
+}
+
+.heading-tertiary--underlined {
+  @include underlined(.8rem, .3rem);
 }
 
 
