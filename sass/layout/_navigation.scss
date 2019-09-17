@@ -1,5 +1,6 @@
 .navigation {
   display: flex;
+  flex-flow: wrap;
   justify-content: space-between;
 
   padding: 2rem 12%;
@@ -11,18 +12,25 @@
     display: flex;
     justify-content: space-between;
     flex: 0 0 50%;
-
     list-style: none;
+
+    @include respond(tab-land) {
+      flex: 1;
+    }
+
+    @include respond (tab-port) {
+      flex: 100%;
+    }
   }
 
   &__link {
+    margin-right: 1rem;
   }
 
   &__form {
     display: flex;
     justify-content: space-between;
-
-    flex: 0 0 30%;
+    flex: 0 1 30%;
   }
 
   &__form--search {

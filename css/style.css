@@ -1,3 +1,10 @@
+/*
+$breakpoint argument choices:
+0-600px - phone
+600-900px - tab-port
+900-1200px - tab-land
+1800px+ - big-desktop
+*/
 *,
 *::after,
 *::before {
@@ -8,6 +15,15 @@
 html {
   box-sizing: border-box;
   font-size: 62.5%; }
+  @media (max-width: 75em) {
+    html {
+      font-size: 56.25%; } }
+  @media (max-width: 56.25em) {
+    html {
+      font-size: 50%; } }
+  @media (min-width: 112.5em) {
+    html {
+      font-size: 75%; } }
 
 body {
   font-family: "Nunito", sans-serif;
@@ -25,7 +41,8 @@ body {
 .heading-primary--underlined {
   display: inline-block;
   position: relative;
-  z-index: 1; }
+  z-index: 1;
+  margin-right: auto; }
   .heading-primary--underlined::after {
     content: "";
     height: 0.6rem;
@@ -42,7 +59,8 @@ body {
 .heading-secondary--underlined {
   display: inline-block;
   position: relative;
-  z-index: 1; }
+  z-index: 1;
+  margin-right: auto; }
   .heading-secondary--underlined::after {
     content: "";
     height: 0.4rem;
@@ -59,7 +77,8 @@ body {
 .heading-tertiary--underlined {
   display: inline-block;
   position: relative;
-  z-index: 1; }
+  z-index: 1;
+  margin-right: auto; }
   .heading-tertiary--underlined::after {
     content: "";
     height: 0.3rem;
@@ -155,7 +174,7 @@ body {
   box-shadow: 0 0.2rem 1rem rgba(0, 0, 0, 0.3);
   border-radius: 1rem;
   background-color: #fff;
-  margin-right: 5rem;
+  margin: 2.5rem;
   position: relative;
   font-size: 1.4rem; }
   .reviews__story:before {
@@ -230,6 +249,7 @@ body {
 
 .navigation {
   display: flex;
+  flex-flow: wrap;
   justify-content: space-between;
   padding: 2rem 12%;
   color: #fff;
@@ -239,10 +259,18 @@ body {
     justify-content: space-between;
     flex: 0 0 50%;
     list-style: none; }
+    @media (max-width: 75em) {
+      .navigation__list {
+        flex: 1; } }
+    @media (max-width: 56.25em) {
+      .navigation__list {
+        flex: 100%; } }
+  .navigation__link {
+    margin-right: 1rem; }
   .navigation__form {
     display: flex;
     justify-content: space-between;
-    flex: 0 0 30%; }
+    flex: 0 1 30%; }
 
 .footer {
   padding: 3% 12%;
@@ -444,12 +472,6 @@ address {
   .case-study__link {
     color: #fb5c71; }
   .case-study__case {
-    /*   background-color: $color-grey-1;
-    height: 20rem;
-    margin: 0 2rem;
-    border-radius: 1rem;
-    box-shadow: 0 1rem 2rem rgba(0, 0, 0, 0.2);
-*/
     margin: 2rem; }
     .case-study__case img {
       width: 100%; }
