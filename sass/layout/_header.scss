@@ -4,6 +4,11 @@
   align-items: center;
   padding: 1rem 12%;
   color: #000;
+
+  @include respond(phone) {
+    justify-content: center;
+    flex-direction: column;
+  }
 }
 
 .logo {
