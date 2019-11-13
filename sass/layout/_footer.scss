@@ -16,14 +16,14 @@
         padding: 1rem;
         min-width: 20rem;
         max-width: 25rem;
-        &:first-child {
-            flex: 1 0 30%;
-            margin-right: 3rem;
-        }
-
-        // &:not(:nth-of-type(4)) {
+        // &:first-child {
+        //     flex: 1 0 30%;
         //     margin-right: 3rem;
         // }
+
+        &:not(:last-child) {
+            margin-right: 2rem;
+        }
 
 
     }
@@ -80,6 +80,6 @@ address {
 }
 
 .copy {
-    flex: 1 0 auto;
+    flex: 1 1 auto;
 
 }

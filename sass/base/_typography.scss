@@ -22,10 +22,18 @@ body {
 .heading-secondary {
   @extend %heading;
   font-size: 4.4rem;
+
+  @media only screen and (max-width: 25em) {
+    font-size: 3.4rem;
+  }
 }
 
 .heading-secondary--underlined {
   @include underlined(1.5rem, .4rem);
+
+  @media only screen and (max-width: 25em) {
+    @include underlined(1.2rem, .2rem);
+  }
 }
 
 .heading-tertiary {

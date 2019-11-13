@@ -10,7 +10,7 @@
     <link rel="stylesheet" type="text/css" href="slick/slick.css" />
     <link rel="stylesheet" type="text/css" href="slick/slick-theme.css" />
     <link rel="stylesheet" href="css/style.css">
-    <title>Aseona</title>
+    <title>Aseona (flex)</title>
 </head>
 
 <body>
@@ -19,11 +19,11 @@
             <img src="img/logo.png" alt="logo image" class="logo__img">
             <div class="logo__brand">Aseona</div>
         </div>
-
-        <div class="contacts">
-            <div class="contacts__phone">Call Us: <span class="contacts__phone--number">(999) 999 99 9</span></div>
-
-            <ul class="contacts__social">
+        
+        <div class="contacts header__contacts">
+            <div class="contacts__phone header__phone">Call Us: <span class="contacts__phone--number header__phone--number">(999) 999 99 9</span></div>
+            
+            <ul class="contacts__social header__social">
                 <li class="contacts__social--btn"><a href="#"><i class="fab fa-facebook"></i></a></li>
                 <li class="contacts__social--btn"><a href="#"><i class="fab fa-twitter"></i></a></li>
                 <li class="contacts__social--btn"><a href="#"><i class="fab fa-tumblr"></i></a></li>
@@ -34,6 +34,11 @@
     </header>
 
     <nav class="navigation">
+        <div class="mobile-nav__icon">
+            <div class="mobile-nav__btn">
+                &nbsp;
+            </div>
+        </div>
         <ul class="navigation__list">
             <li class="navigation__link">Home</li>
             <li class="navigation__link">Pages</li>
@@ -42,12 +47,12 @@
             <li class="navigation__link">Blog</li>
             <li class="navigation__link">Contact</li>
         </ul>
-
+        
         <div class="navigation__form">
             <form action="#" class="navigation__form--search">
                 <input type="search">
             </form>
-
+            
             <form action="#" class="navigation__form--list">
                 <select name="language" id="language">
                     <option value="en">en</option>
@@ -55,7 +60,9 @@
                 </select>
             </form>
         </div>
+        
     </nav>
+    <div class="overlay"></div>
     <main class="main">
         <section class="intro">
             <div class="intro__content">
@@ -87,7 +94,8 @@
 
         <section class="welcome">
             <div class="welcome__info">
-                <h2 class="heading-secondary"><span class="heading-secondary--underlined">Welcome&nbsp;to&nbsp;Aseona</span><br><span
+                <h2 class="heading-secondary"><span
+                        class="heading-secondary--underlined">Welcome&nbsp;to&nbsp;Aseona</span><br><span
                         class="heading-secondary--underlined">Digital&nbsp;Marketing</span></h2>
                 <p class="welcome__text">Having worked with hundreds of companies from small businesses to Fortune
                     1000’s,
