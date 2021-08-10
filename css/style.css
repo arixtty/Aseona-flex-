@@ -231,7 +231,7 @@ body {
   -webkit-box-align: start;
       -ms-flex-align: start;
           align-items: start;
-  background-image: url(../../img/bg-card-1.png);
+  background-image: url(../img/bg-card-1.png);
   background-size: 120% 37%;
   background-position: top;
   background-repeat: no-repeat;
@@ -250,7 +250,7 @@ body {
   background: #38c3c7;
 }
 .card-2__side--pro {
-  background-image: url(../../img/bg-card-2.png);
+  background-image: url(../img/bg-card-2.png);
 }
 .card-2__side--pro .btn {
   background: -o-linear-gradient(330deg, #ff9966, #fe66b6);
@@ -1183,7 +1183,7 @@ address {
 }
 .services__badge {
   padding: 2rem;
-  background-image: url(../../img/bg-splash.png);
+  background-image: url(../img/bg-splash.png);
   background-size: contain;
   background-repeat: no-repeat;
 }
